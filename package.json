@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "daisyui": "^5.5.19"
+  },
+  "scripts": {
+    "tailwind:watch": "npx @tailwindcss/cli -i ./app/input.css -o ./app/output.css --watch",
+    "serve": "php spark serve",
+    "bs": "npx browser-sync start --proxy \"studiohead.test\" --files \"app/Views/**/*.php, app/Controllers/**/*.php, public/**/*, app/**/*.css, app/**/*.js\" --port 3000"
+  }
+}

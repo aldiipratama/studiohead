@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@layer components {
+  .sidebar-btn {
+    @apply btn rounded-none w-full text-left border-0 bg-transparent shadow-none hover:bg-gray-100;
+  }
+  .sidebar-btn.active {
+    @apply bg-gray-200 font-bold border-r-4 border-black;
+  }
+}
